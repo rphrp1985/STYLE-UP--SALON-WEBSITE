@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Font-awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images.jpg">
+
+
+    <title>Order Now - Online Foods</title>
+</head>
+
+<body style="width:100%;">
+
+    <!--------------------------------------------Header------------------------------------------------->
+
+    <div>
+        <nav class="navbar bg-dark text-center">
+            <div class="container-fluid">
+                <form class="d-flex w-50 " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search nearest barbor shop"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+                <a href="checkoutpg.html"><button type="button" class="btn btn-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                        Cart
+                    </button>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="offer1.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="offers2.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="offers3.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+            </div>
+        </div>
+
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <img src="offer1.jpg" class="d-block w-100" alt="..." style="height: 300px;"> -->
+                <blockquote class="blockquote mb-0 text-primary">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                    <footer class="blockquote-footer text-primary">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="offers2.jpg" class="d-block w-100" alt="..." style="height: 300px;"> -->
+                <blockquote class="blockquote mb-0 text-success">
+                    <p class="d-block w-100">A well-known quote, contained in a blockquote element.</p>
+                    <footer class="blockquote-footer text-primary">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="offers3.jpg" class="d-block w-100" alt="..." style="height: 300px;"> -->
+                <blockquote class="blockquote mb-0 text-danger">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                    <footer class="blockquote-footer text-primary">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="offers3.jpg" class="d-block w-100" alt="..." style="height: 300px;"> -->
+                <blockquote class="blockquote mb-0 text-danger">
+                    <p>ashok project .</p>
+                    <footer class="blockquote-footer text-primary">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+            </div>
+        </div>
+
+    <section class="padding-y">
+        <div class="container">
+
+            <!-- <header class="section-heading">
+                <h3 class="section-title">Order Now</h3>
+            </header> -->
+            <div class="d-flex">
+                <!-- <div class="card" style="width: 18rem;">
+                    <img src="cb1.jpg" class="card-img-top" alt="..."style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> -->
+                <div class="card  border border-warning" style="width: 18rem;height:10rem ;">
+                    <img src="cb1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;height: 15rem;">
+                    <img src="cb2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;height: 15rem;">
+                    <img src="cb3.jpg" class="card-img-top" alt="..."style="height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken 65</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem;">
+                    <img src="cb4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;height: 17rem;">
+                    <img src="cb5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pop Corn</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="/index1.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="m1.jpg" class="card-img-top" alt="..." style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="m2.jpg" class="card-img-top" alt="..." style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="m3.jpg" class="card-img-top" alt="..." style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="m4.jpg" class="card-img-top" alt="..." style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="m5.jpg" class="card-img-top" alt="..." style="width: 223px;height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">hairstyle</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="w1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="w2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Special IceCreame</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="w3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="w4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Veg Biryani</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="w5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tanduri Chicken</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc16.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Breakfast Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc17.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinner Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc19.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Special Pizza</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc20.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Daal Rice</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc21.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hot Coffee</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc22.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca Cola</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Masala Dosa</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mutton Biryani</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Leg</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dosa</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Biryani</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken 65</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pop Corn</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cake</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Faluda</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Special IceCreame</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc13.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc14.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Veg Biryani</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc15.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tanduri Chicken</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc16.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Breakfast Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc17.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinner Box</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc19.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Special Pizza</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc20.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Daal Rice</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc21.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hot Coffee</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> -->
+
+            <!-- <div class="card" style="width: 18rem;">
+                    <img src="images/fc22.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca Cola</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/fc8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Faluda</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> -->
+
+            <!-- <div class="card" style="width: 18rem;">
+                    <img src="images/fc9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> -->
+
+            <!-- <div class="card" style="width: 18rem;">
+                    <img src="images/fc10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">$9.0</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div> <!-- container end.// -->
+    </section>
+    <div class="container bg-danger text-white">
+        <footer class="py-5" data-aos="flip-up">
+            <div class="row ">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Categeory</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Features</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Features</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-1 border-top">
+                <p>Foods Online © 2022 Company, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

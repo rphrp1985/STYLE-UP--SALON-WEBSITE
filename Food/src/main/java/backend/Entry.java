@@ -1,9 +1,10 @@
 package backend;
 
 import java.io.*;
-import javax.servlet.ServletException;
+
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
+import javax.servlet.http.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -28,13 +29,47 @@ public class Entry extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		
+		
+		try {
+			
+			Cookie ck[] = request.getCookies();
+			String name= null,mobile=null;
+			
+			for(Cookie c: ck) {
+				
+				if(c.getName().toString().equals("name") )
+					name= c.getValue();
+				
+
+				if(c.getName().toString().equals("mobile") )
+					mobile= c.getValue();
+				
+				
+			}
+			
+			if(name!=null && mobile !=null) {
+				
+				System.out.println("User Is Logged in");
+				
+				PrintWriter pw = response.getWriter();
+				pw.print(HTMLProvider.getIndex(name));
+				pw.close();
+				
+				
+			}
+			
+			
+			
+			
+		}catch(Exception e) {
+			System.out.println("User Is Logged out ");
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
-		
-		pw.print(HTMLProviderIndex.getIndex());
-
+		pw.print(HTMLProvider.getIndex());
 		pw.close();
-		
+		}
 		
 		
 	}

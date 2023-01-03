@@ -1,10 +1,11 @@
 package backend;
 
 import java.io.IOException;
+
 import java.sql.*;
 import java.io.*;
 
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +31,7 @@ public class register extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	 
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
 		
 		
@@ -39,12 +40,12 @@ public class register extends HttpServlet {
 		String mobile=request.getParameter("mobile");
 		String password=request.getParameter("password");
 		
-		
-		
-		
-		
-		
 		DataBase.insertRecord(name,email, mobile, password);
+		
+		RequestDispatcher rd=request.getRequestDispatcher("Entry");  
+        rd.forward(request, response);  
+        
+        
 		
 				
 //		try {

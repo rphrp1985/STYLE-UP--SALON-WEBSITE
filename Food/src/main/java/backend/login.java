@@ -30,7 +30,7 @@ public class login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		
 		String mobile=request.getParameter("mobile");
 		String password=request.getParameter("password");
@@ -38,15 +38,44 @@ public class login extends HttpServlet {
 		System.out.println(mobile+ " Login  "+password);		
 		if(DataBase.checkLogin(mobile,password)) {
 
-			Cookie ck = new Cookie("name",DataBase.getName(mobile, password));
+			String name= DataBase.getName(mobile, password).toString();
+			
+			System.out.println("name =  "+name);
+			
+			
+			try {
+			Cookie ck = new Cookie("name",name);
+			Cookie ck1 = new Cookie("mobile",mobile);
 			response.addCookie(ck);
+			response.addCookie(ck1);
+
+			response.getWriter().append( "<script>window.location.replace(\"/Food/Entry\");</script>");
 			
+			}catch(Exception e) {
+				response.getWriter().append("<script> alert(\"An error occured\")</script> "
+						+ "<script>window.location.replace(\"/Food/login.html\");</script>");
+					
+			}
 			
-			PrintWriter pw= response.getWriter();
-					pw.print("Login Done");
+			System.out.println("Login done");
+			
+//			PrintWriter pw= response.getWriter();
+//					pw.print("Login Done");
+					
+//			RequestDispatcher rd=request.getRequestDispatcher("Entry");  
+//          rd.forward(request, response);  
+//					
+			
+					
+					
 		}else {
-			PrintWriter pw= response.getWriter();
-					pw.print("Wrong password");
+//			PrintWriter pw= response.getWriter();
+			response.getWriter().append("<script> alert(\"Login Failed\")</script> "
+					+ "<script>window.location.replace(\"/Food/login.html\");</script>");
+			
+    			System.out.println("Login fialed");
+//			pw.print("Wrong password");
+					
 		}
 		
 		
